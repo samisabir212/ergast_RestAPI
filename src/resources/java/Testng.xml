@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Suite -->
+<suite name="Suite">
+
+	<!-- Test -->
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="com.GetCall.WeatherGetTests" />
+		</classes>
+
+	</test> 
+</suite> 
+
