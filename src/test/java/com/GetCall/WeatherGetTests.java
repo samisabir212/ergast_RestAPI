@@ -1,29 +1,21 @@
 package com.GetCall;
 
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Header;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import static org.hamcrest.Matchers.*;
 
-import org.hamcrest.MatcherAssert;
-
+import org.testng.Assert;
 
 
 public class WeatherGetTests {
 
-    SoftAssert softAssert;
-    MatcherAssert matcherAssert;
 
-
-    @Test
+    @Test(groups= {"getcall"})
     public void getWeatherDetailsTest(){
 
         //1.define the base url
@@ -81,6 +73,10 @@ public class WeatherGetTests {
        System.out.println(temperature);
 
         //softAssert.assertEquals(200, 200);
+
+
+
+
 
 
 

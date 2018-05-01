@@ -6,11 +6,33 @@
 
 	<!-- Test -->
 	<test thread-count="5" name="Test">
+	
+	<groups>
+		<run>
+			<!-- <include name=""></include> -->
+			<exclude name="getcall"></exclude>
+		</run>
+	</groups>
 
 		<classes>
 			<class name="com.GetCall.WeatherGetTests" />
 		</classes>
 
 	</test> 
+	
+	<test name="PostCalls">
+	
+	<groups>
+		<run>
+			<include name="postcall"></include>
+		</run>
+	</groups>
+	
+	
+	<classes>
+		<class name="com.PostCalls.DemoQA_Customer_PostCall"></class>
+	</classes>
+	
+	</test>
 </suite> 
 
