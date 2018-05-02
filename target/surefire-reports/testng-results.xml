@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6808" started-at="2018-05-01T23:17:57Z" finished-at="2018-05-01T23:18:03Z">
+  <suite name="Suite" duration-ms="6846" started-at="2018-05-02T15:28:59Z" finished-at="2018-05-02T15:29:06Z">
     <groups>
       <group name="postcall">
-        <method signature="DemoQA_Customer_PostCall.createNewCustomer()[pri:0, instance:com.PostCalls.DemoQA_Customer_PostCall@5419f379]" name="createNewCustomer" class="com.PostCalls.DemoQA_Customer_PostCall"/>
+        <method signature="PostCallWithJavaObjects.createNewCustomerTest2()[pri:0, instance:com.PostCalls.PostCallWithJavaObjects@7dc7cbad]" name="createNewCustomerTest2" class="com.PostCalls.PostCallWithJavaObjects"/>
       </group> <!-- postcall -->
     </groups>
-    <test name="Test" duration-ms="4" started-at="2018-05-01T23:17:57Z" finished-at="2018-05-01T23:17:57Z">
+    <test name="Test" duration-ms="3" started-at="2018-05-02T15:28:59Z" finished-at="2018-05-02T15:28:59Z">
     </test> <!-- Test -->
-    <test name="PostCalls" duration-ms="1765" started-at="2018-05-01T23:18:02Z" finished-at="2018-05-01T23:18:03Z">
-      <class name="com.PostCalls.DemoQA_Customer_PostCall">
-        <test-method status="PASS" signature="createNewCustomer()[pri:0, instance:com.PostCalls.DemoQA_Customer_PostCall@5419f379]" name="createNewCustomer" duration-ms="1753" started-at="2018-05-01T19:18:02Z" finished-at="2018-05-01T19:18:03Z">
+    <test name="PostCalls" duration-ms="1802" started-at="2018-05-02T15:29:04Z" finished-at="2018-05-02T15:29:06Z">
+      <class name="com.PostCalls.PostCallWithJavaObjects">
+        <test-method status="PASS" signature="createNewCustomerTest2()[pri:0, instance:com.PostCalls.PostCallWithJavaObjects@7dc7cbad]" name="createNewCustomerTest2" duration-ms="1789" started-at="2018-05-02T11:29:04Z" finished-at="2018-05-02T11:29:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewCustomer -->
-      </class> <!-- com.PostCalls.DemoQA_Customer_PostCall -->
+        </test-method> <!-- createNewCustomerTest2 -->
+      </class> <!-- com.PostCalls.PostCallWithJavaObjects -->
     </test> <!-- PostCalls -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -31,6 +31,8 @@
 	
 	<classes>
 		<class name="com.PostCalls.DemoQA_Customer_PostCall"></class>
+		<class name="com.PostCalls.PostCallWithJavaObjects"></class>
+
 	</classes>
 	
 	</test>

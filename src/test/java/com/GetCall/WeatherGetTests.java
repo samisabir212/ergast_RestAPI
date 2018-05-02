@@ -60,7 +60,7 @@ public class WeatherGetTests {
        System.out.println("This is getting the connection "+connection);
 
 
-       Assert.assertEquals(statuscode, 200);
+       Assert.assertEquals(statuscode, 201);
 
        JsonPath jspath=response.jsonPath();
 

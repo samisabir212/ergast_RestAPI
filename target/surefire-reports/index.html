@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.PostCalls.DemoQA_Customer_PostCall" hash-for-method="createNewCustomer">createNewCustomer</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.PostCalls.PostCallWithJavaObjects" hash-for-method="createNewCustomerTest2">createNewCustomerTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.PostCalls.DemoQA_Customer_PostCall</span>
+              <span class="class-name">com.PostCalls.PostCallWithJavaObjects</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createNewCustomer">
-                  </a> <!-- createNewCustomer -->
-                  <span class="method-name">createNewCustomer</span>
+                  <a name="createNewCustomerTest2">
+                  </a> <!-- createNewCustomerTest2 -->
+                  <span class="method-name">createNewCustomerTest2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,6 +160,7 @@
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.PostCalls.DemoQA_Customer_PostCall&quot;/&gt;
+      &lt;class name=&quot;com.PostCalls.PostCallWithJavaObjects&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PostCalls --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -176,7 +177,7 @@
                 <span class="test-name">Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">PostCalls (1 class)</span>
+                <span class="test-name">PostCalls (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,7 +191,7 @@
               <span class="test-group-name">postcall</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createNewCustomer</span>
+                <span class="method-in-group-name">createNewCustomerTest2</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -212,9 +213,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createNewCustomer')
-data.setCell(0, 2, 'com.PostCalls.DemoQA_Customer_PostCall')
-data.setCell(0, 3, 1753);
+data.setCell(0, 1, 'createNewCustomerTest2')
+data.setCell(0, 2, 'com.PostCalls.PostCallWithJavaObjects')
+data.setCell(0, 3, 1789);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -234,13 +235,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.GetCall.WeatherGetTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">getWeatherDetailsTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.PostCalls.DemoQA_Customer_PostCall</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createNewCustomer</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -252,9 +260,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.PostCalls.DemoQA_Customer_PostCall</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.PostCalls.PostCallWithJavaObjects</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">createNewCustomer</span>
+                <span class="method-name">createNewCustomerTest2</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

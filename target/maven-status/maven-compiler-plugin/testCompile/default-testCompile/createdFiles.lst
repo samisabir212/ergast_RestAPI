@@ -1,2 +1,4 @@
-com/GetCall/WeatherGetTests.class
 com/PostCalls/DemoQA_Customer_PostCall.class
+com/qa/rest/objects/CustomerResponse.class
+com/PostCalls/PostCallWithJavaObjects.class
+com/GetCall/WeatherGetTests.class
