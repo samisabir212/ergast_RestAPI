@@ -1,4 +1,5 @@
-/Users/sami/ergastAPI/src/test/java/com/qa/rest/objects/CustomerResponse.java
+/Users/sami/ergastAPI/src/test/java/com/qa/rest/objects/CustomerCreationRespnse_Success.java
+/Users/sami/ergastAPI/src/test/java/com/qa/rest/objects/CustomerCreationResponse_Failure.java
 /Users/sami/ergastAPI/src/test/java/com/PostCalls/DemoQA_Customer_PostCall.java
 /Users/sami/ergastAPI/src/test/java/com/PostCalls/PostCallWithJavaObjects.java
 /Users/sami/ergastAPI/src/test/java/com/GetCall/WeatherGetTests.java

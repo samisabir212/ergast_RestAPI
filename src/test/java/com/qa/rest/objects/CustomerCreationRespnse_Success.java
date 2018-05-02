@@ -1,6 +1,6 @@
 package com.qa.rest.objects;
 
-public class CustomerCreationResponse {
+public class CustomerCreationRespnse_Success {
 
     public String SuccessCode;
     public String Message;

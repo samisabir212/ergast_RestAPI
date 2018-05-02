@@ -2,17 +2,17 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6846" started-at="2018-05-02T15:28:59Z" finished-at="2018-05-02T15:29:06Z">
+  <suite name="Suite" duration-ms="7503" started-at="2018-05-02T20:45:54Z" finished-at="2018-05-02T20:46:02Z">
     <groups>
       <group name="postcall">
         <method signature="PostCallWithJavaObjects.createNewCustomerTest2()[pri:0, instance:com.PostCalls.PostCallWithJavaObjects@7dc7cbad]" name="createNewCustomerTest2" class="com.PostCalls.PostCallWithJavaObjects"/>
       </group> <!-- postcall -->
     </groups>
-    <test name="Test" duration-ms="3" started-at="2018-05-02T15:28:59Z" finished-at="2018-05-02T15:28:59Z">
+    <test name="Test" duration-ms="3" started-at="2018-05-02T20:45:54Z" finished-at="2018-05-02T20:45:54Z">
     </test> <!-- Test -->
-    <test name="PostCalls" duration-ms="1802" started-at="2018-05-02T15:29:04Z" finished-at="2018-05-02T15:29:06Z">
+    <test name="PostCalls" duration-ms="2455" started-at="2018-05-02T20:45:59Z" finished-at="2018-05-02T20:46:02Z">
       <class name="com.PostCalls.PostCallWithJavaObjects">
-        <test-method status="PASS" signature="createNewCustomerTest2()[pri:0, instance:com.PostCalls.PostCallWithJavaObjects@7dc7cbad]" name="createNewCustomerTest2" duration-ms="1789" started-at="2018-05-02T11:29:04Z" finished-at="2018-05-02T11:29:06Z">
+        <test-method status="PASS" signature="createNewCustomerTest2()[pri:0, instance:com.PostCalls.PostCallWithJavaObjects@7dc7cbad]" name="createNewCustomerTest2" duration-ms="2441" started-at="2018-05-02T16:45:59Z" finished-at="2018-05-02T16:46:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCustomerTest2 -->

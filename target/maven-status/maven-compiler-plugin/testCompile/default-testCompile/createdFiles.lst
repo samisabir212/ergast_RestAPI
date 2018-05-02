@@ -1,4 +1,5 @@
 com/PostCalls/DemoQA_Customer_PostCall.class
-com/qa/rest/objects/CustomerResponse.class
+com/qa/rest/objects/CustomerCreationRespnse_Success.class
 com/PostCalls/PostCallWithJavaObjects.class
 com/GetCall/WeatherGetTests.class
+com/qa/rest/objects/CustomerCreationResponse_Failure.class

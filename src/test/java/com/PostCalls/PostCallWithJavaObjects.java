@@ -3,7 +3,8 @@ package com.PostCalls;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.qa.rest.objects.CustomerCreationResponse;
+import com.qa.rest.objects.CustomerCreationRespnse_Success;
+import com.qa.rest.objects.CustomerCreationResponse_Failure;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -24,11 +25,11 @@ public class PostCallWithJavaObjects {
 
 		 //3.) create a json object with all the fields 
 		  org.json.simple.JSONObject requestJson = new org.json.simple.JSONObject();
-		  requestJson.put("FirstName", "sami2w2");
-		  requestJson.put("LastName", "sabir2w2");
-		  requestJson.put("UserName", "samisabir0022w2");
-		  requestJson.put("Password", "peterparkerSPiderManw22");
-		  requestJson.put("Email", "avenger212w22@gmail.com");
+		  requestJson.put("FirstName", "sami2w23");
+		  requestJson.put("LastName", "sabir23w2");
+		  requestJson.put("UserName", "samisabir00223w2");
+		  requestJson.put("Password", "peterparkerSPiderManw322");
+		  requestJson.put("Email", "avenger3212w22@gmail.com");
 
 
 		  System.out.println("executing group postcall");
@@ -59,18 +60,33 @@ public class PostCallWithJavaObjects {
         this is called 
         *****Deserializtion*****
         ---Deserializtion the response into CustomerResponse class:
+        Positive Scenario
         */
-        CustomerCreationResponse customerResponse = response.as(CustomerCreationResponse.class); //customerResponse.class object got created
-        System.out.println("Customer response message is ::  "+customerResponse.Message);
-        System.out.println("Customer SuccessCode is :: " + customerResponse.SuccessCode);
+        //write conditions of execution  :)
 
+        if(response.statusCode()==201){
+            CustomerCreationRespnse_Success customerResponse = response.as(CustomerCreationRespnse_Success.class); //customerResponse.class object got created
+            System.out.println("Customer response message is ::  "+customerResponse.Message);
+            System.out.println("Customer SuccessCode is :: " + customerResponse.SuccessCode);
+    
+    
+            Assert.assertEquals("OPERATION_SUCCESS", customerResponse.SuccessCode);
+            Assert.assertEquals("Operation completed successfully", customerResponse.Message);
+            Assert.assertEquals(201, response.statusCode());
+            Assert.assertNotEquals(200, response.statusCode());
+        } else if(response.statusCode()==200){
+           // Negative Scenario
+            CustomerCreationResponse_Failure customerCreationResponse_Failure = response.as(CustomerCreationResponse_Failure.class);
+            System.out.println("Customer Response faultid is " + customerCreationResponse_Failure.FaultId);
+            System.out.println("Customer response fault is " + customerCreationResponse_Failure.fault);
+    
+            System.out.println(response.statusCode());
+    
 
-        Assert.assertEquals("OPERATION_SUCCESS", customerResponse.SuccessCode);
-        Assert.assertEquals("Operation completed successfully", customerResponse.Message);
-        Assert.assertEquals(201, response.statusCode());
-        Assert.assertNotEquals(200, response.statusCode());
-
-
+        }
+    
+    
+       
 
 
 		
